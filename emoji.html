@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Emojis</title>
+    <style>
+
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgba(0,23,12,0.5);
+            overflow: hidden;
+
+        }
+
+
+        .emoji{
+
+            font-size: 8rem;
+            transition: all ease-in-out 0.3s;
+            filter: grayscale(1);
+
+        }
+
+        .emoji:hover{
+            transform: scale(2);
+            filter: grayscale(0);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="emoji">🤣</div>
+    <script src="emoji.js"></script>
+</body>
+</html>
